@@ -1,0 +1,155 @@
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+
+
+/* CSS Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #e8e8e8;
+}
+
+
+
+
+
+
+
+/* Header Styles */
+header {
+    background-color: #483D8B;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+/* Navigation Styles */
+nav {
+    background-color: #4B0082;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #8A2BE2;
+    border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main Content Styles */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+.card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    color: #483D8B;
+    margin-bottom: 1rem;
+}
+
+.card img {
+    max-width: 200px;
+    display: block;
+    margin: 1rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* Web Dev Resources List */
+.card ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.card ul li {
+    margin-bottom: 0.5rem;
+}
+
+.card ul li a {
+    color: #9370DB;
+    text-decoration: none;
+}
+
+.card ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* Footer Styles */
+footer {
+    background-color: #483D8B; 
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+#lastModified {
+    color: #E6E6FA;
+    font-size: 0.8rem;
+}
