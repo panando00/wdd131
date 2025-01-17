@@ -1,0 +1,14 @@
+@media screen and (min-width: 768px) {
+    /* Changing header navigation */
+    nav ul {
+        flex-direction: row;  /* changing to horizontal layout */
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    /* changing the grid layout */
+    .temple-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        /* the columns automatically adjust considering the viewport width */
+    }
+}
