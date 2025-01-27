@@ -1,0 +1,73 @@
+@media screen and (min-width: 800px) {
+  main {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+
+  .hero {
+      position: relative;
+      margin-bottom: 2em;
+      grid-column: 1 / -1;
+  }
+
+  .data-content,
+  .weather-content {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 300px;
+      position: absolute;
+      z-index: 2;
+  }
+
+  .data-content {
+      top: 200px;
+      left: 40px;
+  }
+
+  .weather-content {
+      bottom: 40px;
+      right: 40px;
+  }
+
+  .data-content h2,
+  .weather-content h2 {
+      margin-top: 0;
+      margin-bottom: 1em;
+      font-size: 1.5em;
+  }
+
+  dl {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.5em 1em;
+      margin: 0;
+  }
+
+  dt {
+      font-weight: bold;
+      font-size: 0.9em;
+  }
+
+  dd {
+      font-size: 0.9em;
+      margin: 0;
+  }
+
+  .weather-icon-mobile {
+      width: 60px;
+      height: auto;
+      margin: 0.5em auto;
+  }
+
+  h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+  }
+
+  footer {
+      margin-top: 1em;
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Zimbabwe - A country where I was born">
+    <meta name="author" content="Prosper Zvidzai">
+    <title>WWD 131 - Zimbabwe</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="screen and (min-width: 800px)">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Zimbabwe</h1>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 800px)" srcset="images/zimbabwe.webp">
+                <img src="images/zimbabwe.webp" alt="Hero image description" width="1200" height="800">
+            </picture>
+        </div>
+        
+        <section class="data-content">
+            <h2>Data</h2>
+            <dl>
+                <dt>Capital City:</dt>
+                <dd>Harare</dd>
+                <dt>Independence:</dt>
+                <dd>April 18, 1980</dd>
+                <dt>Population:</dt>
+                <dd>Approx 15 million</dd>
+                <dt>Currency:</dt>
+                <dd>Zimbabwe Dollar</dd>
+            </dl>
+        </section>
+
+        <section class="weather-content">
+            <h2>Weather</h2>
+            <img src="images/weather.svg" alt="Weather icon" class="weather-icon-mobile">
+            <dl>
+                <dt>Temperature:</dt>
+                <dd id="temperature">75°F</dd>
+                <dt>Condition:</dt>
+                <dd>Partly Cloudy</dd>
+                <dt>Humidity:</dt>
+                <dd>65%</dd>
+                <dt>Wind:</dt>
+                <dd id="windspeed">5 mph</dd>
+                <dt>Wind Chill:</dt>
+                <dd id="windchill">Calculating...</dd>
+            </dl>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Prosper Zvidzai - Zimbabwe</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
