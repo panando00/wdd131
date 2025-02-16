@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StudentBooks - Online Bookstore sells textbooks to students around the world AT affordable prices">
+    <meta name="author" content="Prosper Zvidzai">
+    <title>StudentBooks - Online Bookstore</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/large-screens.css" media="screen and (min-width: 1024px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>StudentBooks</h1>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="siteplan.html" class="active">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h2>Find Your Textbooks for Less</h2>
+            <p>Save up to 60% on textbooks and educational materials</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Search by title, author, or ISBN...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- featured books -->
+    <section class="featured-books">
+        <h2>Featured Textbooks</h2>
+        <div class="book-grid">
+            <div class="book-card">
+                <img src="placeholder-book.jpg" alt="Computer Science Textbook">
+                <h3>Introduction to Computer Science</h3>
+                <p class="author">Prosper Zvidzai</p>
+                <div class="price-info">
+                    <div class="price">
+                        <span class="current-price">R79.99</span>
+                        <span class="original-price">R129.99</span>
+                        <span class="savings">Save 38%</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Additional book cards will be added dynamically via JavaScript -->
+        </div>
+    </section>
+
+    <section class="about-us">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>We understand the financial challenges students face when purchasing textbooks. 
+               Our mission is to make educational materials more accessible and affordable for 
+               everyone. We offer competitive prices, easy ordering, and reliable delivery 
+               right to your doorstep.</p>
+            <button class="learn-more">Learn More About Our Services</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@studentbooks.com</p>
+                <p>Phone: (073) 845-8175</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get updates on new arrivals and special promotions</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

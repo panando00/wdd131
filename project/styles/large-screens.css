@@ -1,0 +1,81 @@
+/* styles for large screens*/
+@media screen and (min-width: 1024px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .nav-links li a {
+        padding: 0;
+    }
+
+    .nav-links li a:hover {
+        color: #2563eb;
+    }
+
+    .book-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .footer-section {
+        margin-bottom: 0;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.25rem;
+    }
+
+    .nav-container {
+        padding: 1rem 2rem;
+    }
+
+    .featured-books,
+    .about-us {
+        padding: 4rem 2rem;
+    }
+
+    .about-content p {
+        font-size: 1.1rem;
+        max-width: 600px;
+        margin: 0 auto 1.5rem auto;
+    }
+
+    /* Hover effects */
+    .book-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .add-to-cart:hover {
+        background: #1d4ed8;
+    }
+
+    .learn-more:hover {
+        background: #1d4ed8;
+    }
+
+    .newsletter-form button:hover {
+        background: #1d4ed8;
+    }
+
+    .footer-section a:hover {
+        color: #2563eb;
+    }
+
+    .search-bar button:hover {
+        background: #1e40af;
+    }
+}
