@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="StudentBooks - Online Bookstore sells textbooks to students around the world AT affordable prices">
+    <meta name="description" content="StudentBooks - Online Bookstore sells textbooks to students around the world at affordable prices">
     <meta name="author" content="Prosper Zvidzai">
     <title>StudentBooks - Online Bookstore</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/large-screens.css" media="screen and (min-width: 1024px)">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
-
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
                 <h1>StudentBooks</h1>
             </div>
-            <div class="menu-toggle">
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
                 <i class="fas fa-bars"></i>
-            </div>
+            </button>
             <ul class="nav-links">
-                <li><a href="siteplan.html" class="active">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
             </ul>
         </div>
     </nav>
@@ -33,31 +33,17 @@
         <div class="hero-content">
             <h2>Find Your Textbooks for Less</h2>
             <p>Save up to 60% on textbooks and educational materials</p>
-            <div class="search-bar">
-                <input type="text" placeholder="Search by title, author, or ISBN...">
-                <button><i class="fas fa-search"></i></button>
-            </div>
+            <form class="search-bar" role="search">
+                <input type="text" placeholder="Search by title, author, or ISBN..." aria-label="Search books">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
         </div>
     </header>
 
-    <!-- featured books -->
     <section class="featured-books">
         <h2>Featured Textbooks</h2>
         <div class="book-grid">
-            <div class="book-card">
-                <img src="#" alt="Computer Science Textbook">
-                <h3>Introduction to Computer Science</h3>
-                <p class="author">Prosper Zvidzai</p>
-                <div class="price-info">
-                    <div class="price">
-                        <span class="current-price">R79.99</span>
-                        <span class="original-price">R129.99</span>
-                        <span class="savings">Save 38%</span>
-                    </div>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-            </div>
-            <!-- Additional book cards will be added dynamically via JavaScript -->
+            <!-- Book cards will be added dynamically via JavaScript -->
         </div>
     </section>
 
@@ -90,10 +76,10 @@
             <div class="footer-section">
                 <h3>Newsletter</h3>
                 <p>Subscribe to get updates on new arrivals and special promotions</p>
-                <div class="newsletter-form">
-                    <input type="email" placeholder="Enter your email">
-                    <button>Subscribe</button>
-                </div>
+                <form class="newsletter-form" onsubmit="return false;">
+                    <input type="email" placeholder="Enter your email" aria-label="Email for newsletter">
+                    <button type="submit">Subscribe</button>
+                </form>
             </div>
         </div>
     </footer>

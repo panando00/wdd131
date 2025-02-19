@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StudentBooks Services - Textbook rentals, buyback, and more">
+    <meta name="author" content="Prosper Zvidzai">
+    <title>Services - StudentBooks</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/large-screens.css" media="screen and (min-width: 1024px)">
+    <link rel="stylesheet" href="styles/services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/services.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>StudentBooks</h1>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="services-main">
+        <header class="services-hero">
+            <div class="hero-content">
+                <h1>Our Services</h1>
+                <p>Making textbooks accessible and affordable for every student</p>
+            </div>
+        </header>
+
+        <section class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-book-open"></i>
+                <h2>Textbook Rental</h2>
+                <p>Save up to 80% by renting your textbooks for the semester. Flexible rental periods available.</p>
+                <button class="learn-more">Learn More</button>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-exchange-alt"></i>
+                <h2>Book Buyback</h2>
+                <p>Get cash for your used textbooks. We offer competitive buyback prices.</p>
+                <button class="learn-more">Learn More</button>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-tablet-alt"></i>
+                <h2>Digital Textbooks</h2>
+                <p>Access your textbooks instantly on any device. Save money with digital editions.</p>
+                <button class="learn-more">Learn More</button>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-truck"></i>
+                <h2>Free Shipping</h2>
+                <p>Free shipping on orders over R500. Fast and reliable delivery to your doorstep.</p>
+                <button class="learn-more">Learn More</button>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Search</h3>
+                    <p>Find your textbooks by title, author, or ISBN</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Choose</h3>
+                    <p>Select your preferred format and rental period</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Receive</h3>
+                    <p>Get your books delivered to your doorstep</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Return</h3>
+                    <p>Send rentals back when your term ends</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <!-- FAQs will be populated by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@studentbooks.com</p>
+                <p>Phone: (073) 845-8175</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get updates on new arrivals and special promotions</p>
+                <form class="newsletter-form" onsubmit="return false;">
+                    <input type="email" placeholder="Enter your email" aria-label="Email for newsletter">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop for textbooks at StudentBooks - Find affordable educational materials">
+    <meta name="author" content="Prosper Zvidzai">
+    <title>Shop - StudentBooks</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/large-screens.css" media="screen and (min-width: 1024px)">
+    <link rel="stylesheet" href="styles/shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/shop.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>StudentBooks</h1>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="shop-main">
+        <aside class="filters">
+            <div class="filter-section">
+                <h3>Categories</h3>
+                <ul class="category-list">
+                    <li><label><input type="checkbox" value="science"> Science</label></li>
+                    <li><label><input type="checkbox" value="mathematics"> Mathematics</label></li>
+                    <li><label><input type="checkbox" value="computer-science"> Computer Science</label></li>
+                    <li><label><input type="checkbox" value="business"> Business</label></li>
+                    <li><label><input type="checkbox" value="engineering"> Engineering</label></li>
+                </ul>
+            </div>
+
+            <div class="filter-section">
+                <h3>Price Range</h3>
+                <div class="price-range">
+                    <input type="range" id="price-slider" min="0" max="1000" step="10">
+                    <div class="price-inputs">
+                        <input type="number" id="min-price" placeholder="Min">
+                        <span>-</span>
+                        <input type="number" id="max-price" placeholder="Max">
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3>Condition</h3>
+                <ul class="condition-list">
+                    <li><label><input type="checkbox" value="new"> New</label></li>
+                    <li><label><input type="checkbox" value="used-like-new"> Used - Like New</label></li>
+                    <li><label><input type="checkbox" value="used-good"> Used - Good</label></li>
+                </ul>
+            </div>
+
+            <button class="apply-filters">Apply Filters</button>
+        </aside>
+
+        <section class="products">
+            <div class="products-header">
+                <h2>Available Books</h2>
+                <div class="sort-options">
+                    <label for="sort-select">Sort by:</label>
+                    <select id="sort-select">
+                        <option value="relevance">Relevance</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest First</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-grid">
+                <!-- Products will be populated by JavaScript -->
+            </div>
+
+            <div class="pagination">
+                <button class="prev-page" disabled>Previous</button>
+                <span class="page-numbers">
+                    <button class="active">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                </span>
+                <button class="next-page">Next</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@studentbooks.com</p>
+                <p>Phone: (073) 845-8175</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get updates on new arrivals and special promotions</p>
+                <form class="newsletter-form" onsubmit="return false;">
+                    <input type="email" placeholder="Enter your email" aria-label="Email for newsletter">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

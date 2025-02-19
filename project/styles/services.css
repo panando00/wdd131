@@ -1,0 +1,172 @@
+.services-main {
+    padding-top: 80px;
+}
+
+.services-hero {
+    background: linear-gradient(rgba(20, 27, 95, 0.7), rgba(20, 27, 95, 0.7)), url('../images/books.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--pure-white);
+    padding: 4rem 1rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.hero-content h1 {
+    font-size: var(--text-3xl);
+    margin-bottom: 1rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+}
+
+.service-card {
+    background: var(--pure-white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card i {
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+}
+
+.service-card h2 {
+    font-size: var(--text-xl);
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    color: var(--text-gray);
+    margin-bottom: 1.5rem;
+}
+
+.learn-more {
+    background: var(--primary-blue);
+    color: var(--pure-white);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: var(--font-medium);
+    transition: background 0.3s ease;
+}
+
+.learn-more:hover {
+    background: #141b5f;
+}
+
+.how-it-works {
+    background: var(--light-gray);
+    padding: 4rem 1rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.how-it-works h2 {
+    font-size: var(--text-2xl);
+    margin-bottom: 3rem;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.step {
+    position: relative;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: var(--primary-blue);
+    color: var(--pure-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--font-bold);
+    margin: 0 auto 1rem;
+}
+
+.step h3 {
+    font-size: var(--text-lg);
+    margin-bottom: 0.5rem;
+}
+
+.faq {
+    padding: 2rem 1rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: var(--text-2xl);
+    margin-bottom: 3rem;
+}
+
+.faq-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.faq-item {
+    background: var(--pure-white);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: var(--font-medium);
+}
+
+.faq-answer {
+    padding: 0 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    padding: 0 1.5rem 1.5rem;
+    max-height: 500px;
+}
+
+@media (max-width: 768px) {
+    .services-hero {
+        padding: 3rem 1rem;
+    }
+
+    .service-card {
+        padding: 1.5rem;
+    }
+
+    .how-it-works {
+        padding: 3rem 1rem;
+    }
+}
